@@ -1,11 +1,11 @@
 from commis import *
 
-Marguerita = pizza (1,1,1,0,0,0,0,0,0)
-Roma = pizza (1,0,1,1,0,0,0,0)
-Napolitaine = pizza (1,1,0,0,1,1,0,0)
-Toscane = pizza (1,1,1,0,0,0,1,1,1)
-Calzone = pizza (1,1,1,1,0,0,0,0,1)
-Royale = pizza (1,1,1,1,0,0,1,1,1)
+Marguerita = Pizza (1,1,1,0,0,0,0,0,0)
+Roma = Pizza (1,0,1,1,0,0,0,0)
+Napolitaine = Pizza (1,1,0,0,1,1,0,0)
+Toscane = Pizza (1,1,1,0,0,0,1,1,1)
+Calzone = Pizza (1,1,1,1,0,0,0,0,1)
+Royale = Pizza (1,1,1,1,0,0,1,1,1)
 
 class Pizza:
     """Classe dans laquelle les ingrédients nécessaires pour confectionner une
