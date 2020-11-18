@@ -19,5 +19,13 @@ class Commis:
             pizza.oeuf-=stock['oeuf']
             return True
        
-     def Commande(self,stock,ingredient,quantite): #achète des ingrédients pour remplir le stock
-            stock[ingredient]+=quantite
+     def Commande(self,stock,quantite): #achète des ingrédients pour remplir le stock
+            stock['tomate']+=quantite
+            stock['fromage']+=quantite
+            stock['champignon']+=quantite
+            stock['jambon']+=quantite
+            stock['anchois']+=quantite
+            stock['olive']+=quantite
+            stock['lardon']+=quantite
+            stock['crème']+=quantite
+            stock['oeuf']+=quantite
