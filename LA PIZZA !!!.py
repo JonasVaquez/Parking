@@ -4,7 +4,7 @@ class Commis:
     
     def verifStock(self,stock,pizza):
         
-        if pizza.tomate>stock['tomate'] and pizza.fromage>stock['fromage'] and pizza.champignon>stock['champignon'] and  pizza.jambon>stock['jambon'] and pizza.anchois>stock['anchois'] and pizza.olive>stock['olive'] and pizza.lardon>stock['lardon'] and pizza.crème>stock['crème'] and pizza.oeuf>stock['oeuf']:
+        if pizza.tomate>stock['tomate'] or pizza.fromage>stock['fromage'] or pizza.champignon>stock['champignon'] or  pizza.jambon>stock['jambon'] or pizza.anchois>stock['anchois'] or pizza.olive>stock['olive'] or pizza.lardon>stock['lardon'] or pizza.crème>stock['crème'] or pizza.oeuf>stock['oeuf']:
             return False  #le commis vérifie s'il a assez de stock pour la pizza demandé, s'il n'y en a pas assez, il renvoie False
         
         else:
@@ -19,5 +19,5 @@ class Commis:
             pizza.oeuf-=stock['oeuf']
             return True
        
-     def Commande(self,stock,ingredient,quantite):
+     def Commande(self,stock,ingredient,quantite): #achète des ingrédients pour remplir le stock
             stock[ingredient]+=quantite
