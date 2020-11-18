@@ -1,7 +1,17 @@
+from commis import *
+
 class Pizza:
     """Classe dans laquelle les ingrédients nécessaires pour confectionner une
     pizza sont inscrits"""
-   
+    
+    Marguerita = 1,1,1,0,0,0,0,0,0
+    Roma = 1,0,1,1,0,0,0,0
+    Napolitaine = 1,1,0,0,1,1,0,0
+    Toscane = 1,1,1,0,0,0,1,1,1
+    Calzone = 1,1,1,1,0,0,0,0,1
+    Royale = 1,1,1,1,0,0,1,1,1
+    
+    
     def __init__(self,tomate, fromage, champignon, jambon, anchois, olive, lardon, crème, oeuf):
         """création de la liste d'ingrédients nécessaires pour la pizzeria"""
         self.tomate = tomate
@@ -13,7 +23,7 @@ class Pizza:
         self.lardon = lardon
         self.crème = crème
         self.oeuf = oeuf
-
+  
 class Pizzaiolo:
     """Classe dans laquelle le Pizzaiolo intéragit avec son client et
     confectionne,ou non, la pizza"""
@@ -25,5 +35,5 @@ class Pizzaiolo:
             f"Je vous prépare votre pizza !"    #soustrait les ingrédients utilisés au sotck et avertit le client de la confectioin de la pizza    
         else :
             f"Je suis désolé, mais je n'ai plus les ingrédients nécessaires pour faire votre pizza. Commnderez vous autre chose ?"
-            commis.commande(stock,5)                 #commande au commis le stock nécessaire pour faire la pizza demandée par le client et avertit le client que la pizza est indisponible 
-    
+            commis.commande(stock, 5)                 #commande au commis le stock nécessaire pour faire la pizza demandée par le client et avertit le client que la pizza est indisponible 
+
