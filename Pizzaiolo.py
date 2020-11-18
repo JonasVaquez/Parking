@@ -1,17 +1,16 @@
 from commis import *
 
+Marguerita = pizza (1,1,1,0,0,0,0,0,0)
+Roma = pizza (1,0,1,1,0,0,0,0)
+Napolitaine = pizza (1,1,0,0,1,1,0,0)
+Toscane = pizza (1,1,1,0,0,0,1,1,1)
+Calzone = pizza (1,1,1,1,0,0,0,0,1)
+Royale = pizza (1,1,1,1,0,0,1,1,1)
+
 class Pizza:
     """Classe dans laquelle les ingrédients nécessaires pour confectionner une
     pizza sont inscrits"""
-    
-    Marguerita = 1,1,1,0,0,0,0,0,0
-    Roma = 1,0,1,1,0,0,0,0
-    Napolitaine = 1,1,0,0,1,1,0,0
-    Toscane = 1,1,1,0,0,0,1,1,1
-    Calzone = 1,1,1,1,0,0,0,0,1
-    Royale = 1,1,1,1,0,0,1,1,1
-    
-    
+        
     def __init__(self,tomate, fromage, champignon, jambon, anchois, olive, lardon, crème, oeuf):
         """création de la liste d'ingrédients nécessaires pour la pizzeria"""
         self.tomate = tomate
