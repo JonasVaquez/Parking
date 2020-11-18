@@ -17,3 +17,6 @@ class Commis:
             pizza.crème-=stock[crème]
             pizza.oeuf-=stock[oeuf]
             return True
+       
+     def Commande(self,stock,ingredient,quantite):
+            stock[ingredient]+=quantite
