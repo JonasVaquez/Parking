@@ -25,5 +25,5 @@ class Pizzaiolo:
             f"Je vous prépare votre pizza !"    #soustrait les ingrédients utilisés au sotck et avertit le client de la confectioin de la pizza    
         else :
             f"Je suis désolé, mais je n'ai plus les ingrédients nécessaires pour faire votre pizza. Commnderez vous autre chose ?"
-            commis.commande(pizza)                 #commande au commis le stock nécessaire pour faire la pizza demandée par le client et avertit le client que la pizza est indisponible 
+            commis.commande(stock,5)                 #commande au commis le stock nécessaire pour faire la pizza demandée par le client et avertit le client que la pizza est indisponible 
     
