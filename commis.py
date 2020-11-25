@@ -8,15 +8,15 @@ class Commis:
             return False  #le commis vérifie s'il a assez de stock pour la pizza demandé, s'il n'y en a pas assez, il renvoie False
         
         else:
-            pizza.tomate-=stock['tomate'] #sinon il transfère le stock nécéssaire au cuisinier
-            pizza.fromage-=stock['fromage']
-            pizza.champignon-=stock['champignon']
-            pizza.jambon-=stock['jambon']
-            pizza.anchois-=stock['anchois']
-            pizza.olive-=stock['olive']
-            pizza.lardon-=stock['lardon']
-            pizza.crème-=stock['crème']
-            pizza.oeuf-=stock['oeuf']
+            stock['tomate']-=pizza.tomate #sinon il transfère le stock nécéssaire au cuisinier
+            stock['fromage']-=pizza.fromage
+            stock['champignon']-=pizza.champignon
+            stock['jambon']-=pizza.jambon
+            stock['anchois']-=pizza.anchois
+            stock['olive']-=pizza.olive
+            stock['lardon']-=pizza.lardon
+            stock['crème']-=pizza.crème
+            stock['oeuf']-=pizza.oeuf
             return True
        
      def Commande(self,stock,quantite): #achète des ingrédients pour remplir le stock
