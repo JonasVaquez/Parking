@@ -2,7 +2,7 @@ stock={'tomate':50,'fromage':30,'champignon':12,'jambon':2,'anchois':5,'olive':2
 
 class Commis:
     
-    def verifStock(self,stock,pizza):
+    def verifStock(stock,pizza):
         
         if pizza.tomate>stock['tomate'] or pizza.fromage>stock['fromage'] or pizza.champignon>stock['champignon'] or  pizza.jambon>stock['jambon'] or pizza.anchois>stock['anchois'] or pizza.olive>stock['olive'] or pizza.lardon>stock['lardon'] or pizza.crème>stock['crème'] or pizza.oeuf>stock['oeuf']:
             return False  #le commis vérifie s'il a assez de stock pour la pizza demandé, s'il n'y en a pas assez, il renvoie False
